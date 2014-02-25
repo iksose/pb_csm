@@ -1,0 +1,104 @@
+<template name="pbaTemplate">
+
+
+<link href="pba.css" rel="stylesheet" type="text/css" media="all" /> 
+
+
+
+
+
+<!--START WRAPPER-->
+        <!-- <div id="wrapper">	 -->
+<div class="span12">
+    <div class="row-fluid">
+        <div class="span6">
+            <img src="/tablet.jpg">
+        </div>
+        <div class="span2">
+
+
+            Customize a Cash Discount Card Program For Your Pharmacy
+            ScriptCard gives community pharmacies the ability to compete with PBM cash discount cards. Pharmacies establish their own rates, earn cash claim rebates and further enhance revenue by retaining administrative fees typically paid to PBMs when honoring their cards.
+
+
+        </div>
+    </div>
+
+        <div class="row-fluid">
+          <div class="span4">
+                    <h3>
+            <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>  
+            </ul><ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>  
+            </ul>
+            </h3>
+
+          </div>
+          <div class="span5">
+                                {{#each pbaTags}}
+
+                {{> postItem2}}
+
+                {{/each}}
+        </div>
+        <div class="span3">
+        Some more junk
+        </div>
+        </div>
+</div>
+
+        
+
+
+        <div class="posts span4">
+
+
+        </div>
+            
+            <!--START FOOTER-->            
+            <div id="footer">  
+    	        <ul class="footerTop">
+        	        <li class="icons">
+            	        <a href="http://twitter.com/PBA_Health" class="twitter" target="_blank"></a>
+                        <a href="http://www.facebook.com/PBAHealth" class="facebook" target="_blank"></a>
+                    </li>
+                    <li class="linksLeft">
+            	        <a href="pba-careers.aspx">Careers</a>
+                        <a href="pba-contact-us.aspx">Contact</a>
+                        <a href="pba-events.aspx">Events</a>
+                        <a href="pba-sign-up.aspx">Sign Up</a>            
+                    </li>
+                    <li class="addressRight">
+            	        6300 Enterprise Road<br />
+                        Kansas City, Missouri 64120<br />
+                        P 816.245.5700<br />
+                        F 816.245.5702<br />
+                        TF 800.333.8097             
+                    </li>
+                </ul>
+    	        <ul class="navigation">
+                    <li><a id="ctl00_aProfitGuardFooter" class="active" href="pba-profitguard.aspx">ProfitGuard</a></li>
+                    <li><a id="ctl00_aScriptCardFooter" href="pba-scriptcard.aspx">ScriptCard</a></li>
+                    <li><a id="ctl00_aEnsurePayFooter" href="pba-ensurepay-electronic-pharmacy-claims-reconciliation.aspx">EnsurePay</a></li>
+                    <li><a id="ctl00_aTriNetFooter" href="pba-trinet-third-party-network.aspx">TriNet</a></li>
+                    <li><a id="ctl00_aMarketingFooter" href="pba-marketing.aspx">Marketing</a></li>
+                    <li><a id="ctl00_aDirectoryFooter" href="pba-directory.aspx">Directory</a></li>
+                </ul>       
+            </div>
+            <!--END FOOTER-->            	
+
+        <!-- </div>		 -->
+        <!--END WRAPPER-->
+
+
+
+
+
+
+
+</template>

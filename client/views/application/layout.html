@@ -1,0 +1,16 @@
+<template name="layout">
+  <div class="container">
+    {{>header}}
+    {{> errors}}
+    <div id="main" class="row-fluid">
+      {{yield}}
+    </div>
+
+{{#if isInRole 'admin'}}
+
+<h1>I'm admin</h1>
+{{/if}}
+
+
+  </div>
+</template>
