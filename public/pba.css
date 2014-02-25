@@ -4,3 +4,27 @@
 /******************************************************************************************************************/
 
 body {background: url(bg_body.jpg) repeat-x;font: 13px/19px Arial, Tahoma, sans-serif;letter-spacing:.01em;color:#616161;} 
+
+
+/* footer */
+	#footer {float:left;width:930px;height:228px;margin-top:40px;background: url(bg_footer.jpg) top left no-repeat;}
+		#footer .footerTop {width:930px;height:100px;margin:32px 0 16px;}
+		/* social media icons */
+		.icons {float:left;width:65px;height:97px;margin:0 0 5px;border-right:1px solid #fff;}
+			.icons a {float:left;display:block;width:35px;height:35px;margin:10px 0 0 16px;text-decoration:none;border:0;}
+			.icons a.twitter {background: url(../images/icon_twitter.png) top left no-repeat;}
+			.icons a.facebook {background: url(../images/icon_facebook.png) top left no-repeat;}
+			.icons a:hover {border:0;}
+		/* careers - sign up */
+		.linksLeft {float:left;width:100px;}
+			.linksLeft a {display:block;margin:6px 0 0 13px;color:#fff;border:0;line-height:17px;text-decoration:none;border:0;}
+			.linksLeft a:hover {color:#d1d1d1;text-decoration:underline;}
+		/* address */
+		.addressRight {float:right;width:287px;height:93px;padding:6px 0 0 13px;border-left:1px solid #fff;color:#fff;line-height:17px;}	
+		
+		/* the main navigation */ 
+		#footer .navigation {width:640px;margin-left:160px;}
+			#footer .navigation li {float:left;display:inline;position:relative;left:0;top:6px;}	
+				#footer .navigation li a {display:block;margin-right:46px;text-align:center;color:#616161;line-height:17px;text-decoration:none;border:0;}
+				#footer .navigation li a:hover, #footer .navigation li a.active {border-bottom:1px solid #616161;} 
+				

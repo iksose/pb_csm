@@ -8,11 +8,22 @@ Template.pbaTemplate.rendered = function(){
 
 Template.pbaTemplate.helpers({
   pbaTags: function() {
-    console.log("THIS", this)
-    return this.map(function(post, index, cursor) {
+    console.log("THIS pbatag", this)
+    return this[0].map(function(post, index, cursor) {
       post._rank = index;
-      console.log(post, index, cursor)
       return post;
     });
+  },
+  pbaHeader: function(){
+  	console.log("Really tho", this[1])
+  	return this[1]
+  },
+  // pbaHeader: function(){
+  // 	return Posts.findOne({'tags':'top'});
+  // }
+  ownPost: function() {
+  	console.log("Own post?", this)
+    return this[1].userId == Meteor.userId();
   }
+
 });

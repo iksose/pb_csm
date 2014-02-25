@@ -3,10 +3,15 @@ Template.postEdit.events({
     e.preventDefault();
     
     var currentPostId = this._id;
+
+    var tagString = $(e.target).find('[name=tags]').val()
+    var tagArray = tagString.split(',');
+    $.each(tagArray, function(a,b){tagArray[a] = $.trim(b)})
     
     var postProperties = {
       title: $(e.target).find('[name=title]').val(),
-      message: $(e.target).find('[name=message]').val()
+      message: $(e.target).find('[name=message]').val(),
+      tags: tagArray
     }
 
     console.log(postProperties, currentPostId)

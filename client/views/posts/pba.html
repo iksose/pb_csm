@@ -14,13 +14,12 @@
         <div class="span6">
             <img src="/tablet.jpg">
         </div>
-        <div class="span2">
+        <div class="span4">
+        <h2>{{pbaHeader.title}}</h2>
+        {{pbaHeader.message}}
 
 
-            Customize a Cash Discount Card Program For Your Pharmacy
-            ScriptCard gives community pharmacies the ability to compete with PBM cash discount cards. Pharmacies establish their own rates, earn cash claim rebates and further enhance revenue by retaining administrative fees typically paid to PBMs when honoring their cards.
-
-
+        {{#if ownPost}}<a href="/posts/{{pbaHeader._id}}/edit">Edit</a>{{/if}}
         </div>
     </div>
 
@@ -50,15 +49,11 @@
         Some more junk
         </div>
         </div>
-</div>
-
-        
-
-
-        <div class="posts span4">
+  
+     
 
 
-        </div>
+       
             
             <!--START FOOTER-->            
             <div id="footer">  
@@ -92,7 +87,7 @@
             </div>
             <!--END FOOTER-->            	
 
-        <!-- </div>		 -->
+	</div>
         <!--END WRAPPER-->
 
 

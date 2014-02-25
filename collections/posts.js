@@ -8,7 +8,7 @@ Posts.allow({
 Posts.deny({
   update: function(userId, post, fieldNames) {
     // may only edit the following two fields:
-    return (_.without(fieldNames, 'message', 'title').length > 0);
+    return (_.without(fieldNames, 'message', 'title', 'tags').length > 0);
   }
 });
 
@@ -16,6 +16,10 @@ Meteor.methods({
   post: function(postAttributes) {
     var user = Meteor.user(),
       postWithSameLink = Posts.findOne({url: postAttributes.url});
+
+    if (!Roles.userIsInRole(user, ['admin','manage-users'])) {
+      throw new Meteor.Error(401, "Jon is the admin, so...Better ask him before you post.");
+    }
     
     // ensure the user is logged in
     if (!user)

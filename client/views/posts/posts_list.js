@@ -9,7 +9,7 @@ Template.postsList.helpers({
 
   //each post returns no body message. Does not effect original array.
   postsNoDetails: function(){
-  	console.log("MAP ACCESS", this)
+  	console.log("MAP ACCESS", this, "also", this.userId)
   	return this.posts.map(function(post, index, cursor) {
       post.message = "";
       console.log(post, index, cursor)
