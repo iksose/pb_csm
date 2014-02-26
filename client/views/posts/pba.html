@@ -15,11 +15,11 @@
             <img src="/tablet.jpg">
         </div>
         <div class="span4">
-        <h2>{{pbaHeader.title}}</h2>
-        {{pbaHeader.subtitle}}
+        <h2>{{topPost.title}}</h2>
+        {{topPost.subtitle}}
 
-        <a href="/posts/{{pbaHeader._id}}">Read More</a>
-        {{#if ownPost}}<a href="/posts/{{pbaHeader._id}}/edit">Edit</a>{{/if}}
+        <a href="/posts/{{topPost._id}}">Read More</a>
+        {{#if ownPost}}<a href="/posts/{{topPost._id}}/edit">Edit</a>{{/if}}
         </div>
     </div>
 
@@ -27,25 +27,23 @@
           <div class="span4">
           {{#if ownPost}}<a href="/posts/{{pbaHeader._id}}/edit">Edit Links</a>{{/if}}
             <h3>
-                <ul>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>  
-                </ul><ul>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>  
-                </ul>
+            {{#each links}}
+                <a href="/posts/{{this._id}}">{{this.title}}</a><br>
+            {{/each}}
             </h3>
 
           </div>
           <div class="span5">
           <h3>Articles</h3>
-            {{#each pbaTags}}
+            {{#each posts}}
 
                 {{> postItem2}}
 
             {{/each}}
+
+                {{#if nextPath}}
+              <a class="load-more" href="{{nextPath}}">Load more</a>
+            {{/if}}
         </div>
         <div class="span3">
         Some more junk
