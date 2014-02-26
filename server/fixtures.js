@@ -57,12 +57,17 @@ if (Posts.find().count() === 0) {
     commentsCount: 0,
     upvoters: [], votes: 0
   });
+
+  var tagList = ["scriptcard", "trinet", "ensurepay", "scriptcard", "trinet", "ensurepay",
+  "scriptcard", "trinet", "ensurepay"]
   
   for (var i = 0; i < 10; i++) {
     Posts.insert({
       title: 'Test post #' + i,
       author: sacha.profile.name,
       userId: sacha._id,
+      message: "here's a message"
+      tags: tagList[i],
       url: 'http://google.com/?q=test-' + i,
       submitted: now - i * 3600 * 1000 + 1,
       commentsCount: 0,
