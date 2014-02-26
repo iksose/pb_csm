@@ -15,14 +15,14 @@ Template.pbaTemplate.helpers({
     });
   },
   pbaHeader: function(){
-  	console.log("Really tho", this[1])
+  	console.log("Really tho, from pba", this[1])
   	return this[1]
   },
   // pbaHeader: function(){
   // 	return Posts.findOne({'tags':'top'});
   // }
   ownPost: function() {
-  	console.log("Own post?", this)
+  	console.log("Own post?, from pba", this)
     return this[1].userId == Meteor.userId();
   }
 

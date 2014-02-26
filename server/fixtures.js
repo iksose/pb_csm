@@ -59,9 +59,20 @@ if (Posts.find().count() === 0) {
   });
 
   var tagList = [["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
-  ["scriptcard"], ["]trinet"], ["ensurepay"]]
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"],["scriptcard"], ["trinet"], ["ensurepay"], ["scriptcard"], ["trinet"], ["ensurepay"],
+  ["scriptcard"], ["trinet"], ["ensurepay"]]
   
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < tagList.length; i++) {
     Posts.insert({
       title: 'Test post #' + i + tagList[i],
       author: sacha.profile.name,

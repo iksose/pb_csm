@@ -16,34 +16,36 @@
         </div>
         <div class="span4">
         <h2>{{pbaHeader.title}}</h2>
-        {{pbaHeader.message}}
+        {{pbaHeader.subtitle}}
 
-
+        <a href="/posts/{{pbaHeader._id}}">Read More</a>
         {{#if ownPost}}<a href="/posts/{{pbaHeader._id}}/edit">Edit</a>{{/if}}
         </div>
     </div>
 
         <div class="row-fluid">
           <div class="span4">
-                    <h3>
-            <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>  
-            </ul><ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>  
-            </ul>
+          {{#if ownPost}}<a href="/posts/{{pbaHeader._id}}/edit">Edit Links</a>{{/if}}
+            <h3>
+                <ul>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>  
+                </ul><ul>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>  
+                </ul>
             </h3>
 
           </div>
           <div class="span5">
-                                {{#each pbaTags}}
+          <h3>Articles</h3>
+            {{#each pbaTags}}
 
                 {{> postItem2}}
 
-                {{/each}}
+            {{/each}}
         </div>
         <div class="span3">
         Some more junk

@@ -23,7 +23,7 @@
     <div class="post-content">
       <h3><a href="{{pathFor 'postPage'}}">{{title}}</a><span>{{domain}}</span></h3>
       <p>
-        {{message}}
+        {{subtitle}}
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>
     </div>
@@ -37,8 +37,10 @@
     <div class="post-content">
       <h3><a href="{{pathFor 'postPage'}}">{{title}}</a><span>{{domain}}</span></h3>
       <p>
-        {{message}}
 
+        {{#markdown}}
+          {{message}}
+        {{/markdown}}
         <br>
 
         {{#if longerthan1}}

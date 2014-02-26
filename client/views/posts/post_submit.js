@@ -9,6 +9,7 @@ Template.postSubmit.events({
     var post = {
       url: $(e.target).find('[name=url]').val(),
       title: $(e.target).find('[name=title]').val(),
+      subtitle: $(e.target).find('[name=subtitle]').val(),
       message: $(e.target).find('[name=message]').val(),
       tags: tagArray
     }

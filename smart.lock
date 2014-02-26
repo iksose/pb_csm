@@ -6,7 +6,8 @@
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
       "iron-router-progress": {},
-      "roles": {}
+      "roles": {},
+      "marked": {}
     },
     "packages": {
       "iron-router": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/alanning/meteor-roles.git",
         "tag": "v1.2.6",
         "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
+      },
+      "marked": {
+        "git": "https://github.com/chuangbo/meteor-marked.git",
+        "tag": "v0.3.1",
+        "commit": "3d9a9c94793b20e1ee7c807931cb536010d6f820"
       }
     }
   }
