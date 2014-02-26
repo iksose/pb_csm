@@ -17,9 +17,9 @@ Meteor.methods({
     var user = Meteor.user(),
       postWithSameLink = Posts.findOne({url: postAttributes.url});
 
-    if (!Roles.userIsInRole(user, ['admin','manage-users'])) {
-      throw new Meteor.Error(401, "Jon is the admin, so...Better ask him before you post.");
-    }
+    // if (!Roles.userIsInRole(user, ['admin','manage-users'])) {
+    //   throw new Meteor.Error(401, "Jon is the admin, so...Better ask him before you post.");
+    // }
     
     // ensure the user is logged in
     if (!user)

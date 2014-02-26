@@ -22,15 +22,15 @@ var callback = function(obj){
 
 Meteor.onConnection(callback)
 
- Accounts.validateNewUser(function (user) {
-    var loggedInUser = Meteor.user();
+ // Accounts.validateNewUser(function (user) {
+ //    var loggedInUser = Meteor.user();
 
-    if (Roles.userIsInRole(loggedInUser, ['admin','manage-users'])) {
-      return true;
-    }
+ //    if (Roles.userIsInRole(loggedInUser, ['admin','manage-users'])) {
+ //      return true;
+ //    }
 
-    throw new Meteor.Error(403, "Only Jon can create new users");
-  });
+ //    throw new Meteor.Error(403, "Only Jon can create new users");
+ //  });
 
 
 // Authorized users can view secrets
