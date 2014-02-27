@@ -19,15 +19,16 @@
 
 
 <template name="postItem2">
-  <div class="post">
-    <div class="post-content">
+  <div class="">
+    <div class="">
       <h3><a href="{{pathFor 'postPage'}}">{{title}}</a><span>{{domain}}</span></h3>
       <p>
         {{subtitle}}
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+        {{#if isInRole 'admin'}}<p>Admin!</p>{{/if}}
       </p>
     </div>
-    <a href="{{pathFor 'postPage'}}" class="discuss btn">Discuss But</a>
+    <a href="{{pathFor 'postPage'}}" class="discuss btn">Read</a>
   </div>
 </template>
 

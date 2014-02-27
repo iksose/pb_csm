@@ -46,12 +46,27 @@ Meteor.onConnection(callback)
 //   return;
 // });
 
+Meteor.publish(null, function (){ 
+  return Meteor.roles.find({})
+})
+
 
 
 Meteor.methods({
     test:function(arg) {
         //should print the user details if logged in, undefined otherwise.
-        console.log("Result, ", Meteor.user()._id);
-        return Meteor.user()._id
+        var ghostObject = Meteor.user();
+        if(Roles.userIsInRole(ghostObject, 'admin')){
+          return "Already admin"
+        }else if(Meteor.user().username == "jon"){
+          Roles.addUsersToRoles(ghostObject._id, ['admin']);
+          return ghostObject;
+        }else{
+          return "better call saul"
+        }
+        
+    },
+    test2:function(arg){
+      return Roles.getAllRoles()
     }
 });

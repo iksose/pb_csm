@@ -21,6 +21,9 @@ body {
     height: 300px;
   }
 
+
+
+
 .navbar {
   margin-bottom: 10px; }
   /* line 32, ../sass/style.scss */
@@ -114,3 +117,344 @@ body {
   .load-more:hover {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.1); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************************************/
+/******** RESET STYLESHEET IS A MODIFIED VERSION OF ERIC MEYER'S 'RESET RELOADED STYLESHEET ************************/
+/******************************************************************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0; outline:0;font-weight: inherit;font-style:inherit;text-align:left;}
+
+:focus {outline: 0;}
+
+input[type=text],input[type=password], textarea {font: 12px/19px Arial, Tahoma, sans-serif;padding:2px;}
+
+ul, ol {list-style:none;}
+caption {text-align:left;font-weight:normal;}
+em {font-style:italic;}
+strong {font-weight:bold;}
+sup {font-size:0.7em;vertical-align:top;}
+
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes:"" "";}
+
+/* remove borders from linked images */
+a img {border:none;}
+
+/* tables still need cellspacing to match in the markup */
+table {border-collapse:separate;border-spacing:1px;}
+th, td {text-align:left;font-weight:normal;vertical-align:top;}
+
+
+/******************************************************************************************************************/
+/**************************************** * GLOBAL PREDICTABLE ELEMENTS * ******************************************/
+/******************************************************************************************************************/
+
+body {background: #fff url(/bg_body.jpg) repeat-x;font: 13px/19px Arial, Tahoma, sans-serif;letter-spacing:.01em;color:#616161;} 
+
+/* default header styles */
+h1, h2, h3, h4 {color:#4d6c9f;margin:0;}
+h1 {display:none;}
+h2 {font-size: 1.6em;line-height:1em;margin-bottom:10px;}
+h3, .dateline {padding:6px 0 6px 0;font-size:1.4em;line-height:1em;border-bottom:1px solid #ccc;}
+.dateline {font-size:1.1em;}
+h4 {margin: 20px 0 0;font-size:1em;font-weight:bold;}
+
+/* default link styles */
+a, a:visited, a:focus {color:#4d6c9f;text-decoration:underline;}
+a:hover {color:#616161;text-decoration:underline;}
+
+/*.subColumns .leftNav .pdfLink {display:block;background: url(../images/icon-pdf.png) 0 0 no-repeat;text-indent:2px;margin-left:15px;}*/
+.pdfLink {display:inline-block;background: url(/icon-pdf.png) right 2px no-repeat;padding-right:19px;}
+.subColumns .leftNav .pdfLink {display:block;background: url(/icon-pdf.png) 117px 21px no-repeat;}
+
+h3 a {text-decoration:none !important;border:0 !important;}
+
+/* default text styles */
+p {margin:3px 0 9px 0;}
+.center {text-align:center;}
+.note {font-size: .9em;color:#666;}
+.indent {margin-left:40px;}
+
+img.leftImg {float:left;margin:0 10px 10px 0;}
+img.rightImg {float:right;margin:0 0 10px 10px;}
+
+img.border {border:1px solid #ccc;}
+
+.messageText {float:left;display:inline;width:900px;margin:5px 0 5px 0;padding:5px 10px;line-height:24px;}
+.errorMessageText {color: #c00;}
+.successMessageText {color: Green;}
+.required {color: #c00;}
+
+/************************************************************************************************************************/
+/********************************************** GLOBAL LAYOUT ELEMENTS ****************************************************/
+/************************************************************************************************************************/
+
+/* header graphic, link*/
+#wrapper {margin:0 auto;width:930px;}    
+    
+  #header {float:left;width:930px;height:100px;position:relative;background: url(/bg_header.png) top left no-repeat;z-index:200;}  
+     a.logo {width:238px;height:39px;position:absolute;left:0;top:91px;background: url(/logo.png) 0 0 no-repeat;z-index:1000;border:0;}  
+     a.logo:hover {background-position:0 bottom;}
+
+  /* main navigation row */ 
+  #header .navigation {float:left;width:930px;z-index:300;}     
+    /* the main navigation */ 
+    #header .navigation {width:885px;margin-left:38px;}
+      #header .navigation li {float:left;position:relative;}  
+        #header .navigation li a {display:block;margin: 0 8px;padding: 13px 25px 5px;color:#fff;font: bold 13px/19px Trebuchet MS, Tahoma, serif;letter-spacing: -.01em;text-align:center;text-decoration:none;border:0;}         
+        #header .navigation li a:hover, #header .navigation li .active {color:#fff;background: url(http://pbahealth.com/images/bg_navigationAHover.gif) bottom left repeat-x;}  
+        
+        
+  /* the login dropdown */      
+  #header .navigation .login {float:left;display:none;position:absolute;right:-23px;top:34px;width:288px;height:105px;background: url(../images/bg_login.png) top left no-repeat;}    
+      #header .navigation .login li {width:268px;margin:5px 0 0 20px;}
+      #header .navigation .login li:first-child {margin-top:15px;}
+        #header .navigation .login li label {float:left;display:block;width:75px;padding-right:10px;font: 13px/19px Trebuchet MS, sans-serif;text-align:right;font-weight:bold;color:#fff;}
+        #header .navigation .login input[type=text] {float:left;width:130px;height:16px;}
+        #header .navigation .login input[type=submit] {position:absolute;top:-7px;border:0;width:35px;height:35px;background: url(../images/btn_loginGo.png) top left no-repeat;cursor:pointer;}
+        #header .navigation .login li a {width:80px;margin-left:150px;padding:0;font: 10px/10px Helvetica, Arial, Tahoma, sans-serif;text-shadow:none;text-decoration:none;border:0;}
+        #header .navigation .login li a:hover {background-image:none;color:#fff;text-decoration:underline;}
+   
+  /* defines changing content area */
+  #content {float:left;width:930px;}
+
+  /* footer */
+  #footer {float:left;width:930px;height:228px;margin-top:40px;background: url(/bg_footer.jpg) top left no-repeat;}
+    #footer .footerTop {width:930px;height:100px;margin:32px 0 16px;}
+    /* social media icons */
+    .icons {float:left;width:65px;height:97px;margin:0 0 5px;border-right:1px solid #fff;}
+      .icons a {float:left;display:block;width:35px;height:35px;margin:10px 0 0 16px;text-decoration:none;border:0;}
+      .icons a.twitter {background: url(../images/icon_twitter.png) top left no-repeat;}
+      .icons a.facebook {background: url(../images/icon_facebook.png) top left no-repeat;}
+      .icons a:hover {border:0;}
+    /* careers - sign up */
+    .linksLeft {float:left;width:100px;}
+      .linksLeft a {display:block;margin:6px 0 0 13px;color:#fff;border:0;line-height:17px;text-decoration:none;border:0;}
+      .linksLeft a:hover {color:#d1d1d1;text-decoration:underline;}
+    /* address */
+    .addressRight {float:right;width:287px;height:93px;padding:6px 0 0 13px;border-left:1px solid #fff;color:#fff;line-height:17px;}  
+    
+    /* the main navigation */ 
+    #footer .navigation {width:640px;margin-left:160px;}
+      #footer .navigation li {float:left;display:inline;position:relative;left:0;top:6px;}  
+        #footer .navigation li a {display:block;margin-right:46px;text-align:center;color:#616161;line-height:17px;text-decoration:none;border:0;}
+        #footer .navigation li a:hover, #footer .navigation li a.active {border-bottom:1px solid #616161;} 
+        
+
+/* dropshadowed content */
+#header .navigation a, #slider .rightCol h2, #headerImage .rightCol h2,   .homeColumns h2 {text-shadow:1px 2px 2px #264165;}  
+
+/************************************************************************************************************************/
+/**************************************************** CHANGING CONTENT ****************************************************/
+/************************************************************************************************************************/
+
+/* ALL ***********************************************************************************************************************/
+/* carousel slider and subPage top images */
+#slider, #headerImage {float:left;display:inline;width:930px;height:375px;background: url(/bg_slider.gif) top left no-repeat;z-index:0;position:relative;}
+#headerImage {background: url(/bg_headerImage.gif) top left no-repeat;} 
+  /* wavy top image for slider / header image graphics */
+  .sliderTop, .headerImageTop {float:left;width:930px;height:50px;position:absolute;top:0;left:0;background: url(/bg_sliderTopOverlay.png) top left no-repeat;z-index:100;}  
+    /* sliding section or header graphic/text */
+    .panel, .headerImageContent {float:left;display:inline;width:930px;height:375px;}
+      /* left column holds image */
+      .panel .leftCol, .headerImageContent .leftCol {float:left;width:610px;position:relative;}
+      .panel .leftCol iframe{position:absolute; top:60px; left:45px;}
+      /* right column holds title and copy */
+      .panel .rightCol, .headerImageContent .rightCol {float:left;width:280px;padding:40px 20px;font-size:1.1em;}
+        .panel .rightCol p, .panel .rightCol h2, .headerImageContent .rightCol p, .headerImageContent .rightCol h2 {color:#fff;}
+        .panel .rightCol p, .headerImageContent .rightCol p {font: bold 13px/19px Trebuchet MS, Tahoma, serif;}
+        .panel .rightCol h2, .headerImageContent .rightCol h2 {font-family: Trebuchet MS, Tahoma, sans-serif;font-weight:bold;padding-top:10px;}  
+        .panel .rightCol ul li, .headerImageContent .rightCol ul li {list-style:disc;margin-left:20px;}
+        
+/* tables for charts */
+table.chart {width:100%;margin:10px 0;background:#d1d1d1;}
+  table.chart td, table.chart th {padding:6px;background:#fff;}
+  table.chart th {background:#4d6c9f;color:#fff;font-weight:bold;font-size:.9em;}
+  table.chart thead td {background: #666;color:#fff;font-size:.9em;}
+  table.chart td.note {background: #efefef;}    
+  
+/* text formatting */
+.separator {width:100%;margin:10px 0 0;padding-bottom:10px;border-top:1px solid #d1d1d1;}
+.caption {width:100%;padding:10px;background:#e8e8e8;border:1px solid #d1d1d1;}
+  .caption h3 {padding-top:10px !important;}
+
+/* the login form in content body */      
+#content .login {float:left;clear:left;width:700px;padding:10px;position:relative;}   
+    #content .login label {float:left;width:380px;margin:5px 0 0 20px;}
+      #content .login label span {float:left;display:block;width:125px;padding-right:10px;font: 13px/19px Trebuchet MS, sans-serif;text-align:right;font-weight:bold;}
+      #content .login input[type=text], #content .login input[type=password]  {float:left;width:175px;height:17px;margin-bottom:5px;}
+      
+      #content .login input[type=submit] {/*position:absolute;right:15x;bottom:20px;*/float:left;margin-top:-2px;border:0;width:35px;height:35px;background: url(../images/btn_loginGo.png) top left no-repeat;cursor:pointer;}
+      #content .login a {float:left;clear:left;display:block;margin:5px 0 0 155px;padding:0;font: 10px/10px Helvetica, Arial, Tahoma, sans-serif;}
+      
+      #content .login .formIndent {margin:15px 0 0 135px;border:1px solid #c00;}
+      #content .login .formIndent label span, #content .login .formIndent label input, #content .login .required  {float:none;display:inline;}
+      #content .login .required {color:#c00;padding-right:3px;}
+
+
+/* HOME ***********************************************************************************************************************/
+/** carousel preloader **/
+.coda-slider p.loading {text-align:center;padding-top:60px;color:#666;}
+
+/** carousel structure **/  
+.coda-slider-wrapper {float:left;position:relative;width:930px;height:375px;overflow:hidden;}
+  /** keep the carousel content contained in a box even when js is disabled **/
+  .coda-slider-no-js .coda-slider {height:375px;overflow: auto !important;}   
+  /** generic necessary values */
+  .coda-slider {float:left;width:930px;position:absolute;left:0;top:0;overflow:hidden;}
+    .coda-slider .panel {float:left;display:block;}
+    .coda-slider .panel-container {position:relative;}  
+  
+  /** width of the carousel (without dynamic arrows) **/
+  .coda-slider, .coda-slider .panel {width:930px;height:375px!important;overflow:hidden!important;}   
+  .coda-slider .panel {width:930px;position:relative;}        
+  
+  /** carousel tabbed nav  **/
+  .coda-nav {position:relative;z-index:100;}
+  .coda-nav ul {float:right;width:272px !important;height:20px;margin:350px 20px 0 0;/*position:absolute;left:810px;top:347px;width:130px !important;*/}
+    .coda-nav ul li {float:left;display: inline;width:26px;}
+      .coda-nav ul li a {display:block;width:18px;height:18px;background: url(../images/btn_carousel.png) center 0 no-repeat;cursor:pointer;border:0;}
+      .coda-nav ul li a:hover, .coda-nav ul li a.current {background: url(../images/btn_carousel.png) center -18px no-repeat;text-decoration:none;border:0;}  
+    
+/* home: three columns */       
+.homeColumns {float:left;display:inline;width:930px;margin-top:50px;}
+  .homeCol {float:left;width:296px;margin-right:21px;position:relative;padding-top:180px;}    
+    /* three column images */
+    .homeCol img.overlay {position:absolute;left:0;top:0;z-index:100;}
+    .homeCol img.dynamic {position:absolute;left:0;top:0px;z-index:100;}
+    .homeColumns h2 {position:absolute;left:10px;top:130px;z-index:100;font-family: Trebuchet MS, Tahoma, sans-serif;font-weight:bold;color:#fff;text-decoration:none;}     
+    .homeColumns ul li {list-style:disc;margin-left:30px;}
+    .homeColumns h3 {padding:6px 0 !important;margin-bottom:3px;}
+
+    /* three column copy (see subcolumns related news) */
+    .homeColumns .center p.recentNews {float:left;position:relative;height:65px;padding-bottom:15px;border-bottom:1px solid #d1d1d1;}
+      .homeColumns .center a.related {position:absolute;right:0;top:38px;}
+      .homeColumns .right {margin-right:0;} 
+      
+      
+    .coda-slider .panel .leftCol img, .headerImageContent .leftCol img {width:610px;height:375px;}  
+        
+    
+/* INSIDE PAGES ***********************************************************************************************************************/
+.subColumns {float:left;display:inline;width:930px;}
+  .subCol {float:left;position:relative;} 
+  
+  /* left nav on inside pages */
+  .subColumns .leftNav {width:200px;margin-top:30px;padding-top:20px;background: url(../images/bg_subNav.png) right top no-repeat;}
+    .leftNav a {display:block;padding:0 10px 7px 17px;font-family:Trebuchet MS, Tahoma, serif;color:#000;border:0;text-decoration:none;letter-spacing:-.02em;cursor:pointer;}
+    .leftNav a:hover, .leftNav a.active {background: url(http://pbahealth.com/images/bg_navigationAHover.gif) 0 0 no-repeat;font-weight:bold;}
+    
+    .subColumns .leftNav li.secondary {margin-left:15px;font-size:.9em;}
+    .subColumns .leftNav li.tertiary {margin-left:30px;font-size:.9em;}
+  
+  /* landing and inside pages - landing pages have right column recent news */
+  .subColumns .rightLanding, .subColumns .right {width:370px;margin-top:50px;padding-left:30px;}
+  .subColumns .right {width:700px;} 
+    .rightLanding h2 {font-size:2em;}
+    .rightLanding h3, .right h3 {padding: 20px 0 0 0;border:0;font-size:1.3em;}
+    
+    /* bullets on ordered lists */
+    .rightLanding ol, .right ol, .directory ol, .threeCol{margin:15px 0;}
+    .rightLanding ol li, .right ol li, .directory ol li, .threeCol {list-style:decimal;margin-left:30px;}
+    .rightLanding ul li, .right ul li, .directory ul li, .threeCol {list-style:disc!important;margin-left:30px;}
+      .rightLanding ol li li, .right ol li li, .directory ol li li, .threeCol, .rightLanding ul li li, .right ul li li, .directory ul li li {list-style:circle!important;margin-left:30px;}
+      .rightLanding ol li li li, .right ol li li li, .directory ol li li li, .threeCol, .rightLanding ul li li li, .right ul li li li, .directory ul li li li {list-style:square!important;margin-left:30px;}
+    
+  /* right column recent news related news on landng pages (see home three column copy) */
+  .subColumns .relatedNews {float:right;width:290px;margin:50px 0 0 20px;}
+    .subColumns .relatedNews h2 {margin-bottom:2px;font-size:1.9em;padding:0;border-bottom:1px solid #d1d1d1;}
+    .subColumns .relatedNews p.recentNews {float:left;width:100%;height:65px;padding-bottom:14px;border-bottom:1px solid #d1d1d1;}
+  
+  
+/* BLOG ***********************************************************************************************************************/  
+.blog {float:left;display:inline;width:930px;margin-top:50px;z-index:0;position:relative;}
+  .blogContent {float:left;display:inline;width:610px;padding-right:20px;}
+    .blog select {padding:2px;border:1px solid #4d6c9f;width:300px;color:#4d6c9f;outline:0;font-size:1em;}
+    .blog h2 {margin-top:35px;border-bottom:1px solid #345484;}
+      .blog h2 a {text-decoration:none;}
+    .blog .dateline {border:0;}
+    .blogContent ul li {list-style:disc;margin-left:20px;}
+    
+    /* tables */
+    .blogContent table {margin:10px 0;border:1px solid #c0cbdd;margin:3px;background:#ccc;width:550px !important;}
+      .blogContent table td, .blogContent table th {background:#fff;padding:5px;}
+        .blogContent table th {background:#dae4f6;padding:8px 5px;}
+        
+    /* bullets on ordered lists */
+    .blogContent ol, .blogContent ul {margin:15px 0;}
+    .blogContent ol li {list-style:decimal;margin-left:30px;}
+    .blogContent ul li {list-style:disc!important;margin-left:30px;}
+        .blogContent ol li li, .blogContent ul li li {list-style:circle!important;margin-left:30px;}
+        .blogContent ol li li li, .blogContent ul li li li {list-style:square!important;margin-left:30px;}
+    
+
+/* accordion styles */  
+#accordion {float:right;display:inline;width:300px;}
+  #accordion li {width:300px;}
+    #accordion ul li {margin:0 0 0 15px;}
+    #accordion ul li a {color:#616161;border:0;}
+    
+      #accordion a.view { display:block;background: transparent url(../images/accordionArrow.png) left 2px no-repeat;padding:8px 18px 4px;font-size:1.2em;text-decoration:none;border-bottom:1px solid #d1d1d1;cursor:pointer;}
+      #accordion li.active a.view, #accordion a.view:hover {background-position:left -29px;border-bottom:1px solid #d1d1d1;}
+    
+      #accordion li ul {display: none;margin:10px 0 20px;}
+      #accordion li.active ul {display: block;}
+        #accordion li li a {display:block;text-decoration:none;margin:3px 0;}
+        #accordion li li a:hover {text-decoration:underline;} 
+      
+      
+    
+
+/* DIRECTORY ***********************************************************************************************************************/     
+.directory {float:left;display:inline;width:930px;margin-top:70px;position:relative;} 
+  .directory .header {float:left;display:block;width:100%;padding:6px 0;font: bold 13px/19px Trebuchet MS, Tahoma, serif;background: #fff;border-bottom:1px solid #999;border-top:1px solid #999;color:#666;}
+        .directory .header span {background:#999;margin:0 5px;padding:3px 7px;color:#fff;}
+  
+  /* columns */ 
+  .vendorList, .vendorDetails {float:left;width:300px;margin-right:10px;line-height:21px;}  
+    /* category dropdown */
+    .vendorList select {float:left;width:300px;margin:10px 0 40px;}
+    /* vendor list scrolling results */
+    ul.list {float:left;display:block;height:400px;overflow-y:scroll;overflow-x:hidden;background:#e8e8e8;}
+        ul.list li {list-style:none;margin:0;}          
+          ul.list li a {display:block;width:265px;padding:6px 10px;background:#fff;text-decoration:none;color:#333;}
+          ul.list li a.alternate {background:#e8e8e8;}
+          ul.list li a:hover, ul.list li a.current {background:#999 !important;color:#fff !important;font-weight:bold;font-style:oblique;font-size:.9em;}
+            ul.list li.preferred a {background:#d2e4f0;}
+            ul.list li.preferred a.alternate {background:#c2d8e7;}
+  
+  /* vendor details copy */
+  .vendorDetails {width:620px;margin-right:0;}
+      .vendorDetailsContent {float:left;display:block;width:580px;min-height:420px;padding:40px 20px;background:#fff;}    
+      .vendorDetailsRightCol {float:right;display:inline;width:235px;margin:0 0 15px 15px; padding:0 0 15px 15px;line-height:17px;border-left:1px solid #999;}
+        .vendorDetailsRightCol img {margin-bottom:10px;}
+        .vendorDetailsRightCol h3 {margin:15px 0 5px;padding:0;font-size:13px;border:0;font-weight:bold;}
+  
+  /*#categories {height:500px;position:absolute;top:60px;left:0;overflow-y:scroll;}*/
+
+  
+/* CONTACT ***********************************************************************************************************************/ 
+.row {float:left;display:inline;margin-top:30px;}
+.contactColumns {float:left;display:inline;width:265px;margin-right:25px;}
+
+
+.readMore{
+  color:white !important;
+}
+
+
+
+  

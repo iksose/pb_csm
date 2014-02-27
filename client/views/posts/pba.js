@@ -22,7 +22,9 @@ Template.pbaTemplate.helpers({
             // }
   ownPost: function() {
     console.log("pba temp", this)
-    return this.topPost.userId == Meteor.userId();
+    if(typeof this.topPost != "undefined"){
+      return this.topPost.userId == Meteor.userId();
+    }
   },
 
   pbaTags: function(){

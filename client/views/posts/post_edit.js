@@ -11,7 +11,8 @@ Template.postEdit.events({
     var postProperties = {
       title: $(e.target).find('[name=title]').val(),
       message: $(e.target).find('[name=message]').val(),
-      tags: tagArray
+      tags: tagArray,
+      subtitle: $(e.target).find('[name=subtitle]').val()
     }
 
     console.log(postProperties, currentPostId)

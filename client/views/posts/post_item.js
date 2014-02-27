@@ -1,7 +1,7 @@
 Template.postItem2.helpers({
   ownPost: function() {
     console.log("Own post?", this)
-    return this.userId == Meteor.userId();
+    return this.userId == Meteor.userId() || Roles.userIsInRole(this.userId, 'admin');
   },
   domain: function() {
     var a = document.createElement('a');
